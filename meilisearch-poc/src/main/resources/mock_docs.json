@@ -1,0 +1,110 @@
+[
+  {
+    "id": "syn-1",
+    "title": "การส่งเสริมการลงทุน",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า การส่งเสริมการลงทุน",
+    "popularity": 101,
+    "updated_at": 1737000001,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-2",
+    "title": "สิทธิประโยชน์",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า สิทธิประโยชน์",
+    "popularity": 102,
+    "updated_at": 1737000002,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-3",
+    "title": "ยกเว้นภาษีเงินได้นิติบุคคล",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า ยกเว้นภาษีเงินได้นิติบุคคล",
+    "popularity": 103,
+    "updated_at": 1737000003,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-4",
+    "title": "การรายงานผลการดำเนินงาน",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า การรายงานผลการดำเนินงาน",
+    "popularity": 104,
+    "updated_at": 1737000004,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-5",
+    "title": "การโอนกิจการ",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า การโอนกิจการ",
+    "popularity": 105,
+    "updated_at": 1737000005,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-6",
+    "title": "ช่างฝีมือและผู้ชำนาญการ",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า ช่างฝีมือและผู้ชำนาญการ",
+    "popularity": 106,
+    "updated_at": 1737000006,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-7",
+    "title": "ส่วนสูญเสีย",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า ส่วนสูญเสีย",
+    "popularity": 107,
+    "updated_at": 1737000007,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-8",
+    "title": "บัตรส่งเสริม",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า บัตรส่งเสริม",
+    "popularity": 108,
+    "updated_at": 1737000008,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-9",
+    "title": "การเปิดดำเนินการ",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า การเปิดดำเนินการ",
+    "popularity": 109,
+    "updated_at": 1737000009,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-10",
+    "title": "อุตสาหกรรมเป้าหมาย",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า อุตสาหกรรมเป้าหมาย",
+    "popularity": 110,
+    "updated_at": 1737000010,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-11",
+    "title": "สูตรการผลิต",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า สูตรการผลิต",
+    "popularity": 111,
+    "updated_at": 1737000011,
+    "tags": ["synonym", "thai_term"]
+  },
+  {
+    "id": "syn-12",
+    "title": "ผู้พำนักระยะยาว",
+    "category": "boi",
+    "content": "เอกสารอธิบายคำว่า ผู้พำนักระยะยาว",
+    "popularity": 112,
+    "updated_at": 1737000012,
+    "tags": ["synonym", "thai_term"]
+  }
+]
