@@ -9,8 +9,5 @@
 # Meilisearch data
 /meili_data/
 
-# Test output
-/test_results.md
-
 # OS
 .DS_Store

@@ -4,314 +4,359 @@
     "query": "การสนับสนุนการลงทุน",
     "expectTerm": "การส่งเสริมการลงทุน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การส่งเสริมการลงทุน'"
   },
   {
     "name": "positive-02",
     "query": "สิทธิและประโยชน์",
     "expectTerm": "สิทธิประโยชน์",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สิทธิประโยชน์'"
   },
   {
     "name": "positive-03",
     "query": "Tax Exemption",
     "expectTerm": "ยกเว้นภาษีเงินได้นิติบุคคล",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ยกเว้นภาษีเงินได้นิติบุคคล'"
   },
   {
     "name": "positive-04",
     "query": "e-Monitoring",
     "expectTerm": "การรายงานผลการดำเนินงาน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การรายงานผลการดำเนินงาน'"
   },
   {
     "name": "positive-05",
     "query": "การควบรวมกิจการ",
     "expectTerm": "การโอนกิจการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การโอนกิจการ'"
   },
   {
     "name": "positive-06",
     "query": "Strategic Talent Center (STC)",
     "expectTerm": "ช่างฝีมือและผู้ชำนาญการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ช่างฝีมือและผู้ชำนาญการ'"
   },
   {
     "name": "positive-07",
     "query": "เศษซาก",
     "expectTerm": "ส่วนสูญเสีย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ส่วนสูญเสีย'"
   },
   {
     "name": "positive-08",
     "query": "ใบรับรองการส่งเสริม",
     "expectTerm": "บัตรส่งเสริม",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'บัตรส่งเสริม'"
   },
   {
     "name": "positive-09",
     "query": "การเริ่มดำเนินกิจการ",
     "expectTerm": "การเปิดดำเนินการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การเปิดดำเนินการ'"
   },
   {
     "name": "positive-10",
     "query": "Targeted Industries",
     "expectTerm": "อุตสาหกรรมเป้าหมาย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'อุตสาหกรรมเป้าหมาย'"
   },
   {
     "name": "positive-11",
     "query": "บัญชีปริมาณสต๊อก",
     "expectTerm": "สูตรการผลิต",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สูตรการผลิต'"
   },
   {
     "name": "positive-12",
     "query": "LTR Visa",
     "expectTerm": "ผู้พำนักระยะยาว",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ผู้พำนักระยะยาว'"
   },
   {
     "name": "positive-13",
     "query": "การส่งเสริมการลงทุน",
     "expectTerm": "การส่งเสริมการลงทุน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การส่งเสริมการลงทุน'"
   },
   {
     "name": "positive-14",
     "query": "การยื่นขอรับการส่งเสริม",
     "expectTerm": "การส่งเสริมการลงทุน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การส่งเสริมการลงทุน'"
   },
   {
     "name": "positive-15",
     "query": "มาตรการส่งเสริมการลงทุน",
     "expectTerm": "การส่งเสริมการลงทุน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การส่งเสริมการลงทุน'"
   },
   {
     "name": "positive-16",
     "query": "สิทธิประโยชน์",
     "expectTerm": "สิทธิประโยชน์",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สิทธิประโยชน์'"
   },
   {
     "name": "positive-17",
     "query": "ผลประโยชน์ทางการลงทุน",
     "expectTerm": "สิทธิประโยชน์",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สิทธิประโยชน์'"
   },
   {
     "name": "positive-18",
     "query": "มาตรการส่งเสริม",
     "expectTerm": "สิทธิประโยชน์",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สิทธิประโยชน์'"
   },
   {
     "name": "positive-19",
     "query": "ยกเว้นภาษีเงินได้นิติบุคคล",
     "expectTerm": "ยกเว้นภาษีเงินได้นิติบุคคล",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ยกเว้นภาษีเงินได้นิติบุคคล'"
   },
   {
     "name": "positive-20",
     "query": "การงดเว้นภาษีกำไรบริษัท",
     "expectTerm": "ยกเว้นภาษีเงินได้นิติบุคคล",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ยกเว้นภาษีเงินได้นิติบุคคล'"
   },
   {
     "name": "positive-21",
     "query": "สิทธิประโยชน์ด้านภาษี",
     "expectTerm": "ยกเว้นภาษีเงินได้นิติบุคคล",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ยกเว้นภาษีเงินได้นิติบุคคล'"
   },
   {
     "name": "positive-22",
     "query": "การรายงานผลการดำเนินงาน",
     "expectTerm": "การรายงานผลการดำเนินงาน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การรายงานผลการดำเนินงาน'"
   },
   {
     "name": "positive-23",
     "query": "การรายงานความคืบหน้าโครงการ",
     "expectTerm": "การรายงานผลการดำเนินงาน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การรายงานผลการดำเนินงาน'"
   },
   {
     "name": "positive-24",
     "query": "รายงานประจำปี",
     "expectTerm": "การรายงานผลการดำเนินงาน",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การรายงานผลการดำเนินงาน'"
   },
   {
     "name": "positive-25",
     "query": "การโอนกิจการ",
     "expectTerm": "การโอนกิจการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การโอนกิจการ'"
   },
   {
     "name": "positive-26",
     "query": "การรับโอนโครงการ",
     "expectTerm": "การโอนกิจการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การโอนกิจการ'"
   },
   {
     "name": "positive-27",
     "query": "การรับโอนสิทธิ",
     "expectTerm": "การโอนกิจการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การโอนกิจการ'"
   },
   {
     "name": "positive-28",
     "query": "ช่างฝีมือและผู้ชำนาญการ",
     "expectTerm": "ช่างฝีมือและผู้ชำนาญการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ช่างฝีมือและผู้ชำนาญการ'"
   },
   {
     "name": "positive-29",
     "query": "ผู้เชี่ยวชาญต่างชาติ",
     "expectTerm": "ช่างฝีมือและผู้ชำนาญการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ช่างฝีมือและผู้ชำนาญการ'"
   },
   {
     "name": "positive-30",
     "query": "บุคลากรทักษะสูง",
     "expectTerm": "ช่างฝีมือและผู้ชำนาญการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ช่างฝีมือและผู้ชำนาญการ'"
   },
   {
     "name": "positive-31",
     "query": "ส่วนสูญเสีย",
     "expectTerm": "ส่วนสูญเสีย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ส่วนสูญเสีย'"
   },
   {
     "name": "positive-32",
     "query": "วัตถุดิบที่เสียหายจากการผลิต",
     "expectTerm": "ส่วนสูญเสีย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ส่วนสูญเสีย'"
   },
   {
     "name": "positive-33",
     "query": "วัตถุดิบไม่ได้คุณภาพ",
     "expectTerm": "ส่วนสูญเสีย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ส่วนสูญเสีย'"
   },
   {
     "name": "positive-34",
     "query": "บัตรส่งเสริม",
     "expectTerm": "บัตรส่งเสริม",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'บัตรส่งเสริม'"
   },
   {
     "name": "positive-35",
     "query": "เอกสารยืนยันการได้รับสิทธิ",
     "expectTerm": "บัตรส่งเสริม",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'บัตรส่งเสริม'"
   },
   {
     "name": "positive-36",
     "query": "การเปิดดำเนินการ",
     "expectTerm": "การเปิดดำเนินการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การเปิดดำเนินการ'"
   },
   {
     "name": "positive-37",
     "query": "การตรวจสอบเงื่อนไขการผลิต",
     "expectTerm": "การเปิดดำเนินการ",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'การเปิดดำเนินการ'"
   },
   {
     "name": "positive-38",
     "query": "อุตสาหกรรมเป้าหมาย",
     "expectTerm": "อุตสาหกรรมเป้าหมาย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'อุตสาหกรรมเป้าหมาย'"
   },
   {
     "name": "positive-39",
     "query": "อุตสาหกรรมยุทธศาสตร์",
     "expectTerm": "อุตสาหกรรมเป้าหมาย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'อุตสาหกรรมเป้าหมาย'"
   },
   {
     "name": "positive-40",
     "query": "S-Curve",
     "expectTerm": "อุตสาหกรรมเป้าหมาย",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'อุตสาหกรรมเป้าหมาย'"
   },
   {
     "name": "positive-41",
     "query": "สูตรการผลิต",
     "expectTerm": "สูตรการผลิต",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สูตรการผลิต'"
   },
   {
     "name": "positive-42",
     "query": "อัตราการใช้ส่วนผสมวัตถุดิบ",
     "expectTerm": "สูตรการผลิต",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'สูตรการผลิต'"
   },
   {
     "name": "positive-43",
     "query": "ผู้พำนักระยะยาว",
     "expectTerm": "ผู้พำนักระยะยาว",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ผู้พำนักระยะยาว'"
   },
   {
     "name": "positive-44",
     "query": "Long-Term Resident",
     "expectTerm": "ผู้พำนักระยะยาว",
     "minHits": 1,
-    "maxHits": 10
+    "maxHits": 10,
+    "expectation": "should include 'ผู้พำนักระยะยาว'"
   },
   {
     "name": "negative-01",
     "query": "nonexistent-zzz-12345",
     "expectTerm": null,
     "minHits": 0,
-    "maxHits": 0
+    "maxHits": 0,
+    "expectation": "should return 0 hits"
   }
 ]

@@ -63,6 +63,7 @@ object Boot extends IOApp.Simple {
   final case class SynonymTestCase(
                                     name: String,
                                     query: String,
+                                    expectation: String,
                                     expectTerm: Option[String],
                                     minHits: Int,
                                     maxHits: Int
@@ -229,6 +230,7 @@ object Boot extends IOApp.Simple {
       val primary = SynonymTestCase(
         name = s"$baseName-term",
         query = entry.thai_term,
+        expectation = s"should include '${entry.thai_term}' (direct term)",
         expectTerm = Some(entry.thai_term),
         minHits = 1,
         maxHits = maxHits
@@ -237,6 +239,7 @@ object Boot extends IOApp.Simple {
         SynonymTestCase(
           name = s"$baseName-syn-${j + 1}",
           query = syn,
+          expectation = s"should include '${entry.thai_term}' via synonym",
           expectTerm = Some(entry.thai_term),
           minHits = 1,
           maxHits = maxHits
@@ -303,7 +306,7 @@ object Boot extends IOApp.Simple {
                              ): IO[Unit] = {
     val defaultLimit = 50
 
-    final case class TestResult(status: String, name: String, input: String, output: String)
+    final case class TestResult(status: String, name: String, input: String, expectation: String, output: String)
 
     def renderOutput(titles: List[String], hitCount: Int): String = {
       val titleStr = if (titles.isEmpty) "<none>" else titles.mkString(", ")
@@ -319,7 +322,7 @@ object Boot extends IOApp.Simple {
 
       IO(meili.search(indexUid, payload)).flatMap {
         case Left(err) =>
-          IO.pure(TestResult("ERROR", test.name, test.query, s"error=$err"))
+          IO.pure(TestResult("ERROR", test.name, test.query, test.expectation, s"error=$err"))
         case Right(js) =>
           val hits = js.hcursor.downField("hits").focus.flatMap(_.asArray).getOrElse(Vector.empty)
           val hitCount = hits.length
@@ -329,10 +332,9 @@ object Boot extends IOApp.Simple {
           val maxOk = hitCount <= test.maxHits
 
           if (hasExpected && minOk && maxOk) {
-            IO.pure(TestResult("PASS", test.name, test.query, renderOutput(titles, hitCount)))
+            IO.pure(TestResult("PASS", test.name, test.query, test.expectation, renderOutput(titles, hitCount)))
           } else {
-            val termInfo = test.expectTerm.map(t => s"expect=$t").getOrElse("expect=<none>")
-            IO.pure(TestResult("FAIL", test.name, test.query, s"$termInfo ${renderOutput(titles, hitCount)}"))
+            IO.pure(TestResult("FAIL", test.name, test.query, test.expectation, renderOutput(titles, hitCount)))
           }
       }
     }
@@ -344,14 +346,15 @@ object Boot extends IOApp.Simple {
       value + (" " * (width - value.length))
 
     def renderTable(results: List[TestResult]): String = {
-      val headers = List("STATUS", "TEST", "INPUT", "OUTPUT")
-      val maxCaps = Map("STATUS" -> 7, "TEST" -> 20, "INPUT" -> 40, "OUTPUT" -> 80)
+      val headers = List("STATUS", "TEST", "INPUT", "EXPECT", "OUTPUT")
+      val maxCaps = Map("STATUS" -> 7, "TEST" -> 20, "INPUT" -> 40, "EXPECT" -> 50, "OUTPUT" -> 80)
 
       val widths = headers.map { header =>
         val values = header match {
           case "STATUS" => results.map(_.status)
           case "TEST" => results.map(_.name)
           case "INPUT" => results.map(_.input)
+          case "EXPECT" => results.map(_.expectation)
           case "OUTPUT" => results.map(_.output)
         }
         val maxLen = (header :: values).map(_.length).max
@@ -367,6 +370,7 @@ object Boot extends IOApp.Simple {
           padRight(truncate(r.status, widths("STATUS")), widths("STATUS")),
           padRight(truncate(r.name, widths("TEST")), widths("TEST")),
           padRight(truncate(r.input, widths("INPUT")), widths("INPUT")),
+          padRight(truncate(r.expectation, widths("EXPECT")), widths("EXPECT")),
           padRight(truncate(r.output, widths("OUTPUT")), widths("OUTPUT"))
         )
         "| " + cells.mkString(" | ") + " |"

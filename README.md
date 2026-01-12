@@ -44,13 +44,14 @@ docker run -it --rm \
 
 - `src/main/resources/synonym_tests.json`
   - JSON array of test cases.
-  - Fields: `name`, `query`, `expectTerm`, `minHits`, `maxHits`.
+  - Fields: `name`, `query`, `expectation`, `expectTerm`, `minHits`, `maxHits`.
   - Example shape:
     ```json
     [
       {
         "name": "positive-01",
         "query": "SYN_A1",
+        "expectation": "should include 'TERM_A'",
         "expectTerm": "TERM_A",
         "minHits": 1,
         "maxHits": 10
@@ -74,13 +75,13 @@ The app will:
 ### Sample output
 
 ```text
-+--------+----------------------+------------------------------------------+----------------------------------------------+
-| STATUS | TEST                 | INPUT                                    | OUTPUT                                       |
-+--------+----------------------+------------------------------------------+----------------------------------------------+
-| PASS   | positive-01          | การสนับสนุนการลงทุน                      | hits=1 titles=การส่งเสริมการลงทุน             |
-| PASS   | positive-06          | Strategic Talent Center (STC)            | hits=1 titles=ช่างฝีมือและผู้ชำนาญการ         |
-| FAIL   | negative-01          | nonexistent-zzz-12345                    | expect=<none> hits=0 titles=<none>           |
-+--------+----------------------+------------------------------------------+----------------------------------------------+
++--------+----------------------+------------------------------------------+---------------------------+----------------------------------------------+
+| STATUS | TEST                 | INPUT                                    | EXPECT                    | OUTPUT                                       |
++--------+----------------------+------------------------------------------+---------------------------+----------------------------------------------+
+| PASS   | positive-01          | การสนับสนุนการลงทุน                      | should include 'การส่งเสริมการลงทุน' | hits=1 titles=การส่งเสริมการลงทุน             |
+| PASS   | positive-06          | Strategic Talent Center (STC)            | should include 'ช่างฝีมือและผู้ชำนาญการ' | hits=1 titles=ช่างฝีมือและผู้ชำนาญการ         |
+| FAIL   | negative-01          | nonexistent-zzz-12345                    | should return 0 hits       | hits=0 titles=<none>                         |
++--------+----------------------+------------------------------------------+---------------------------+----------------------------------------------+
 ```
 
 ### Optional env vars
