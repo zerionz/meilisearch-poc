@@ -1,5 +1,16 @@
-*.class
-*.log
+# SBT / Scala
+/target/
+/project/target/
+/.bsp/
+/.metals/
+/.idea/
+*.iml
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Meilisearch data
+/meili_data/
+
+# Test output
+/test_results.md
+
+# OS
+.DS_Store
